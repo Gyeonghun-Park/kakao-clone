@@ -8,9 +8,10 @@
       src="https://kit.fontawesome.com/f7215b91ba.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Chat | Kakao Clone</title>
   </head>
-  <body>
+  <body class="chats-body">
     <div class="status-bar">
       <div class="status-bar__column">
         <span class="status_bar__clock">13:45</span>
@@ -24,9 +25,9 @@
       </div>
     </div>
     <header class="header">
-      <div>
-        <a href="index.html" class="header__header-column">
-          <i class="fas fa-arrow-left fa-2x"></i
+      <div class="header__header-column">
+        <a href="index.html" class="header__back-btn">
+          <i class="fas fa-arrow-left"></i
         ></a>
         <h1 class="header__title">Bset Friend</h1>
       </div>
@@ -39,21 +40,35 @@
         </span>
       </div>
     </header>
-    <main class="chat">
+    <main class="chat-screen">
       <ul class="chat__messages">
-        <span class="chat__timestamp">Friday ,January 3, 2020</span>
+        <span class="chat__timestamp">Friday, January 3, 2020</span>
         <li class="incoming-message message">
           <img src="images/avatar.jpg" class="message__avatar g-avatar" />
           <div class="message__content">
-            <span class="message_author">Best Friend</span>
-            <div class="messge__bubble">Congrants I love you!</div>
+            <span class="message__bubble">Congrants I love you!</span>
+            <span class="message__author">Best Friend</span>
           </div>
           <span class="message__tiemstamp"></span>
         </li>
-        <li class="incoming-message message">
+        <li class="sent-message message">
           <span class="message__tiemstamp"></span>
           <div class="message__content">
-            <div class="messge__bubble">Thank you see you soon!</div>
+            <span class="message__bubble">Thank you see you soon!</span>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/avatar.jpg" class="message__avatar g-avatar" />
+          <div class="message__content">
+            <span class="message__bubble">Congrants I love you!</span>
+            <span class="message__author">Best Friend</span>
+          </div>
+          <span class="message__tiemstamp"></span>
+        </li>
+        <li class="sent-message message">
+          <span class="message__tiemstamp"></span>
+          <div class="message__content">
+            <span class="message__bubble">Thank you see you soon!</span>
           </div>
         </li>
       </ul>
